@@ -9,6 +9,7 @@ metadata_features = [
 
 general_features = [
     "appearances",
+    "number_of_seasons",
     "matchesstarted",
     "minutesplayed",
     "rating",
@@ -36,6 +37,10 @@ attacking_features = [
     "setpiececonversion",
     "shots_on_target_pct",
     "inside_box_shot_pct",
+    "attemptpenaltymiss",
+    "attemptpenaltypost",
+    "attemptpenaltytarget",
+    
     
     # Goal Subtypes
     "leftfootgoals",
