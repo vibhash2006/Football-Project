@@ -144,6 +144,7 @@ creation_features = [
 possession_features = [
     # Ball Retention Volume & Security
     "touches",
+    "possessionwonattthird",
     "possessionlost",
     "dispossessed",
     
@@ -164,6 +165,7 @@ possession_features = [
     
     # Possession Per 90 Metrics
     "touches_per90",
+    "possessionwonattthird_per90",
     "possessionlost_per90",
     "dispossessed_per90",
     "totalcontest_per90",
@@ -270,6 +272,20 @@ goalkeeper_features = [
     "attemptpenaltymiss",
     "attemptpenaltytarget",
     "attemptpenaltypost",
+    
+    # Goalkeeping per 90 Metrics
+    "saves_per90",
+    "savescaught_per90",
+    "savesparried_per90",
+    "savedshotsfrominsidethebox_per90",
+    "savedshotsfromoutsidethebox_per90",
+    "goalsprevented_per90",
+    "runsout_per90",
+    "successfulrunsout_per90",
+    "goalkicks_per90",
+    "punches_per90",
+    "highclaims_per90",
+    "crossesnotclaimed_per90",
 ]
 
 discipline_features = [
