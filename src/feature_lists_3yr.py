@@ -61,6 +61,7 @@ attacking_features = [
     # Attacking Per 90 Metrics
     "goals_per90",
     "expectedgoals_per90",
+    "goals_minus_xg_per90",
     "totalshots_per90",
     "shotsontarget_per90",
     "shotsofftarget_per90",
@@ -120,6 +121,7 @@ creation_features = [
     # Creation Per 90 Metrics
     "assists_per90",
     "expectedassists_per90",
+    "assists_minus_xa_per90"
     "goalsassistssum_per90",
     "totalpasses_per90",
     "accuratepasses_per90",
