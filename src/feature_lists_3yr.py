@@ -121,7 +121,7 @@ creation_features = [
     # Creation Per 90 Metrics
     "assists_per90",
     "expectedassists_per90",
-    "assists_minus_xa_per90"
+    "assists_minus_xa_per90",
     "goalsassistssum_per90",
     "totalpasses_per90",
     "accuratepasses_per90",
