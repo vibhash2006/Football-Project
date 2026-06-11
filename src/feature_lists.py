@@ -639,6 +639,55 @@ duel_features = [
 ]
 
 goalkeeper_features = [
+    # Clean Sheet Trackers
+    "cleansheet",
+    
+    # Conceding Parameters
+    "goalsconceded",
+    "goalsconcededinsidethebox",
+    "goalsconcededoutsidethebox",
+    
+    # Basic & Complex Stopping
+    "saves",
+    "savescaught",
+    "savesparried",
+    "savedshotsfrominsidethebox",
+    "savedshotsfromoutsidethebox",
+    "goalsprevented",
+    
+    # Box Management & Claiming
+    "punches",
+    "highclaims",
+    "crossesnotclaimed",
+    
+    # Sweeping / Mobility Out of Box
+    "runsout",
+    "successfulrunsout",
+    "goalkicks",
+    
+    # Penalty-Faced Interventions
+    "penaltyfaced",
+    "penaltysave",
+    "penaltyconceded",
+    "penaltywon",
+    "attemptpenaltymiss",
+    "attemptpenaltytarget",
+    "attemptpenaltypost",
+    
+    # Goalkeeping per 90 Metrics
+    "saves_per90",
+    "savescaught_per90",
+    "savesparried_per90",
+    "savedshotsfrominsidethebox_per90",
+    "savedshotsfromoutsidethebox_per90",
+    "goalsprevented_per90",
+    "runsout_per90",
+    "successfulrunsout_per90",
+    "goalkicks_per90",
+    "punches_per90",
+    "highclaims_per90",
+    "crossesnotclaimed_per90",
+    
     # Per90 z-scores
     "saves_per90_zscore",
     "savescaught_per90_zscore",
@@ -658,8 +707,207 @@ goalkeeper_features = [
 ]
 
 discipline_features = [
+    # General Booking Volumes & Direct Blunders
+    "yellowcards",
+    "yellowredcards",
+    "directredcards",
+    "redcards",
+    "owngoals",
+    
+    # Booking & Self-Sabotage Per 90 Metrics
+    "yellowcards_per90",
+    "yellowredcards_per90",
+    "directredcards_per90",
+    "owngoals_per90",
+    
+    # Booking per 90 zscore
+    
     "yellowcards_per90_zscore",
     "yellowredcards_per90_zscore",
     "directredcards_per90_zscore",
     "owngoals_per90_zscore",
+]
+
+attacking_features_z = [
+    "goalconversionpercentage_zscore",
+    "penaltyconversion_zscore",
+    "setpiececonversion_zscore",
+    "goals_per_xg_zscore",
+    "shots_on_target_pct_zscore",
+    "inside_box_shot_pct_zscore",
+    "weak_foot_goals_pct_zscore",
+
+    "goals_zscore",
+    "expectedgoals_zscore",
+    "goals_minus_xg_zscore",
+    "scoringfrequency_zscore",
+    "goals_per90_zscore",
+    "expectedgoals_per90_zscore",
+    "goals_minus_xg_per90_zscore",
+    "totalshots_per90_zscore",
+    "shotsontarget_per90_zscore",
+    "shotsofftarget_per90_zscore",
+    "shotsfrominsidethebox_per90_zscore",
+    "shotsfromoutsidethebox_per90_zscore",
+    "hitwoodwork_per90_zscore",
+    "leftfootgoals_per90_zscore",
+    "rightfootgoals_per90_zscore",
+    "headedgoals_per90_zscore",
+    "goalsfrominsidethebox_per90_zscore",
+    "goalsfromoutsidethebox_per90_zscore",
+    "freekickgoal_per90_zscore",
+    "penaltiestaken_per90_zscore",
+    "penaltygoals_per90_zscore",
+    "bigchancesmissed_per90_zscore",
+]
+
+creation_features_z = [
+    "accuratepassespercentage_zscore",
+    "accuratelongballspercentage_zscore",
+    "accuratecrossespercentage_zscore",
+
+    "assist_conversion_zscore",
+    "xa_per_keypass_zscore",
+    "final_third_pass_pct_zscore",
+    "opp_half_pass_pct_zscore",
+
+    "assists_zscore",
+    "expectedassists_zscore",
+    "assists_minus_xa_zscore",
+    "assists_per90_zscore",
+    "expectedassists_per90_zscore",
+    "assists_minus_xa_per90_zscore",
+    "goalsassistssum_per90_zscore",
+
+    "totalpasses_per90_zscore",
+    "accuratepasses_per90_zscore",
+    "inaccuratepasses_per90_zscore",
+
+    "totaloppositionhalfpasses_per90_zscore",
+    "accurateoppositionhalfpasses_per90_zscore",
+
+    "totalownhalfpasses_per90_zscore",
+    "accurateownhalfpasses_per90_zscore",
+
+    "accuratefinalthirdpasses_per90_zscore",
+
+    "keypasses_per90_zscore",
+    "totalattemptassist_per90_zscore",
+    "passtoassist_per90_zscore",
+    "bigchancescreated_per90_zscore",
+
+    "totallongballs_per90_zscore",
+    "accuratelongballs_per90_zscore",
+
+    "totalchippedpasses_per90_zscore",
+    "accuratechippedpasses_per90_zscore",
+
+    "totalcross_per90_zscore",
+    "accuratecrosses_per90_zscore",
+]
+
+possession_features_z = [
+    "successfuldribblespercentage_zscore",
+
+    "dribbles_per_touch_zscore",
+    "dispossessed_per_touch_zscore",
+    "possession_lost_per_touch_zscore",
+
+    "touches_per90_zscore",
+    "possessionwonattthird_per90_zscore",
+    "possessionlost_per90_zscore",
+    "dispossessed_per90_zscore",
+    "totalcontest_per90_zscore",
+    "successfuldribbles_per90_zscore",
+    "offsides_per90_zscore",
+    "wasfouled_per90_zscore",
+    "fouls_per90_zscore",
+]
+
+defending_features_z = [
+    "tackleswonpercentage_zscore",
+
+    "tackles_per90_zscore",
+    "tackleswon_per90_zscore",
+    "interceptions_per90_zscore",
+    "ballrecovery_per90_zscore",
+    "clearances_per90_zscore",
+    "blockedshots_per90_zscore",
+    "dribbledpast_per90_zscore",
+    "errorleadtoshot_per90_zscore",
+    "errorleadtogoal_per90_zscore",
+
+    "defensive_actions_per90_zscore",
+]
+
+duel_features_z = [
+    "totalduelswonpercentage_zscore",
+    "groundduelswonpercentage_zscore",
+    "aerialduelswonpercentage_zscore",
+
+    "totalduelswon_zscore",
+    "groundduelswon_zscore",
+    "aerialduelswon_zscore",
+    
+    "totalduelswon_per90_zscore",
+    "duellost_per90_zscore",
+    "groundduelswon_per90_zscore",
+    "aerialduelswon_per90_zscore",
+    "aeriallost_per90_zscore",
+]
+
+goalkeeper_features_z = [
+    
+    "cleansheet_zscore",
+    "goalsconceded_zscore",
+    "goalsconcededinsidethebox_zscore",
+    "goalsconcededoutsidethebox_zscore",
+    "penaltyfaced_zscore",
+    "penaltysave_zscore",
+    "penaltyconceded_zscore",
+
+    "saves_zscore",
+    "savescaught_zscore",
+    "savesparried_zscore",
+
+    "savedshotsfrominsidethebox_zscore",
+    "savedshotsfromoutsidethebox_zscore",
+
+    "runsout_zscore",
+    "successfulrunsout_zscore",
+
+    "goalkicks_zscore",
+
+    "punches_zscore",
+    "highclaims_zscore",
+    "crossesnotclaimed_zscore",
+    
+    "saves_per90_zscore",
+    "savescaught_per90_zscore",
+    "savesparried_per90_zscore",
+
+    "savedshotsfrominsidethebox_per90_zscore",
+    "savedshotsfromoutsidethebox_per90_zscore",
+
+    "runsout_per90_zscore",
+    "successfulrunsout_per90_zscore",
+
+    "goalkicks_per90_zscore",
+
+    "punches_per90_zscore",
+    "highclaims_per90_zscore",
+    "crossesnotclaimed_per90_zscore",
+]
+
+discipline_features_z = [
+    "yellowcards_per90_zscore",
+    "yellowredcards_per90_zscore",
+    "directredcards_per90_zscore",
+    "owngoals_per90_zscore",
+]
+
+rating_features_z = [
+    "rating_zscore",
+    "totalrating_zscore",
+    "countrating_zscore",
 ]
