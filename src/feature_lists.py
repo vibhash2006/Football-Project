@@ -735,7 +735,6 @@ attacking_features_z = [
     "goals_per_xg_zscore",
     "shots_on_target_pct_zscore",
     "inside_box_shot_pct_zscore",
-    "weak_foot_goals_pct_zscore",
 
     "goals_zscore",
     "expectedgoals_zscore",
