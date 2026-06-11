@@ -663,24 +663,3 @@ discipline_features = [
     "directredcards_per90_zscore",
     "owngoals_per90_zscore",
 ]
-
-
-all_defined = (
-    set(volume_cols)
-    | set(rate_cols)
-    | set(per90_cols)
-    | set(volume_zscore_cols)
-    | set(metadata_features)
-    | set(general_features)
-    | set(availability_features)
-    | set(per90_zscore_cols)
-    | set(rate_zscore_cols)
-    | {c.replace("_zscore", "") for c in volume_zscore_cols}
-)
-
-import pandas as pd
-
-df=pd.read_csv('D:/FOOTBALL PROJECT/data/processed/major_leagues/Sofascore_player_data_2526.csv')
-
-missing = sorted(set(df.columns) - all_defined)
-print(missing)
