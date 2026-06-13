@@ -12,6 +12,7 @@ venv/
 data/raw/
 data/processed/
 data/interim/
+data/key.py
 
 # OS
 .DS_Store
