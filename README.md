@@ -6,7 +6,7 @@ An end-to-end football analytics pipeline built from scratch — covering data e
  
 ## Overview
  
-This project builds a **player intelligence and match prediction system** across 16 leagues and 3 seasons (2022/23 — 2024/25). The pipeline classifies players into tactical archetypes using unsupervised learning, constructs team strength vectors from those profiles, and simulates the 2026 FIFA World Cup using a trained match prediction model.
+This project builds a **player intelligence and match prediction system** across 16 leagues and 3 seasons (2023/24 — 2025/26). The pipeline classifies players into tactical archetypes using unsupervised learning, constructs team strength vectors from those profiles, and simulates the 2026 FIFA World Cup using a trained match prediction model.
  
 The project is structured in two phases:
  
